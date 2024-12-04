@@ -6,7 +6,7 @@ const Cate = () => {
   const params = useParams();
   return (
     <div>
-      {/* <Category params={params.categories} /> */}
+      <Category params={params.categories} />
     </div>
   );
 };
