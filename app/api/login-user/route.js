@@ -1,10 +1,8 @@
-import connectDB from "@/db/Database";
 import { cookies } from "next/headers";
 import jwt from "jsonwebtoken";
 import User from "@/models/User";
 import { NextResponse } from "next/server";
 export const GET = async (req) => {
-  await connectDB();
   const authToken = cookies().get("authToken")?.value || "";
   try {
     const detail = jwt.verify(authToken, process.env.JWT_SECRET);

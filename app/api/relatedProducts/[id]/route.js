@@ -1,4 +1,3 @@
-import connectDB from "@/db/Database";
 import ClothingProduct from "@/models/Product";
 import { NextResponse } from "next/server";
 
@@ -10,7 +9,6 @@ function shuffleArray(array) {
   return array;
 }
 export const GET = async (req, { params }) => {
-  await connectDB();
   const { id } = params;
   const product = await ClothingProduct.findById(id);
 

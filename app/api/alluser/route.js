@@ -1,9 +1,7 @@
-import connectDB from "@/db/Database";
 import User from "@/models/User";
 import { NextResponse } from "next/server";
 
 export const GET = async (req) => {
-  await connectDB();
   try {
     const user = await User.find({});
     return NextResponse.json({

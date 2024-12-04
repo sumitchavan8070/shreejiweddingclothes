@@ -1,9 +1,7 @@
-import connectDB from "@/db/Database";
 import Cart from "@/models/Cart";
 import { NextResponse } from "next/server";
 
 export const POST = async (req) => {
-  await connectDB();
   const { userId, items } = await req.json();
 
   try {
@@ -34,7 +32,6 @@ export const POST = async (req) => {
 };
 
 export const DELETE = async (req) => {
-  await connectDB();
   const { id } = await req.json();
   try {
     const cart = await Cart.findByIdAndDelete(id);

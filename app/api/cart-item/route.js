@@ -1,9 +1,7 @@
-import connectDB from "@/db/Database";
 import Cart from "@/models/Cart";
 import { NextResponse } from "next/server";
 
 export const POST = async (req) => {
-  await connectDB();
   const { userId } = await req.json();
   try {
     const cartItem = await Cart.find({ userId });

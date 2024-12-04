@@ -1,9 +1,7 @@
-import connectDB from "@/db/Database";
 import ClothingProduct from "@/models/Product";
 import { NextResponse } from "next/server";
 
 export const GET = async (req, { params }) => {
-  await connectDB();
   try {
     const product = await ClothingProduct.findById(params.product);
     return NextResponse.json({
@@ -20,7 +18,6 @@ export const GET = async (req, { params }) => {
 };
 
 export const PUT = async (res, { params }) => {
-  await connectDB();
   const { product } = await res.json();
   try {
     const updated = await ClothingProduct.findByIdAndUpdate(
@@ -41,7 +38,6 @@ export const PUT = async (res, { params }) => {
 };
 
 export const DELETE = async (req, { params }) => {
-  await connectDB();
   try {
     const deleted = await ClothingProduct.findByIdAndDelete(params.product);
     return NextResponse.json({

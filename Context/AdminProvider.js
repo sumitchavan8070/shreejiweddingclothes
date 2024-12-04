@@ -17,13 +17,13 @@ const AdminProvider = ({ children }) => {
     AllUser();
   }, []);
 
-  useEffect(() => {
-    const Allproducts = async () => {
-      const { data } = await axios.get("/api/allproducts");
-      setTotalProduct(data.data);
-    };
-    Allproducts();
-  }, []);
+  // useEffect(() => {
+  //   const Allproducts = async () => {
+  //     const { data } = await axios.get("/api/allproducts");
+  //     setTotalProduct(data.data);
+  //   };
+  //   Allproducts();
+  // }, []);
   return (
     <AdminContext.Provider value={{ totalUser, totalProduct }}>
       {children}

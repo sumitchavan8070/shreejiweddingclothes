@@ -1,9 +1,7 @@
-import connectDB from "@/db/Database";
 import ClothingProduct from "@/models/Product";
 import { NextResponse } from "next/server";
 
 export const GET = async (req, { params }) => {
-  await connectDB();
   const { _id } = params;
   const product = await ClothingProduct.findById(_id);
   if (!product) {

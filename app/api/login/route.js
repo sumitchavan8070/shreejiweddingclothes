@@ -1,4 +1,3 @@
-import connectDB from "@/db/Database";
 import User from "@/models/User";
 import { NextResponse } from "next/server";
 import bcrypt from "bcrypt";
@@ -6,7 +5,6 @@ import jwt from "jsonwebtoken";
 import { cookies } from "next/headers";
 
 export const POST = async (req) => {
-  await connectDB();
   const { email, password } = await req.json();
   try {
     if (!email || !password) {
