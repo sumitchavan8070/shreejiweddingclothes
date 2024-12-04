@@ -151,7 +151,7 @@ const Header = () => {
 
             <div className="flex items-center gap-0">
               <a onClick={sendWhatsAppMessage}>
-              <Image src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="image" width={200} height={300} />           
+              <Image src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="image" width={120} height={50} />           
               </a>
 
 
