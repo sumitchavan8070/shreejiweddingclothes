@@ -88,7 +88,7 @@ const Contact = () => {
 
             <p className="mt-3 text-gray-500 -400">
 
-              Welcome to Shreeji Wedding Clothes! We are delighted to be part of your special journey, helping you find the perfect attire for your wedding day. Whether you're looking for a stunning bridal lehenga, an elegant saree, a regal groom sherwani, or a sharp suit, our extensive collection promises to offer something that suits your unique style and traditions.
+              Welcome to Shreeji Wedding Clothes! We are delighted to be part of your special journey, helping you find the perfect attire for your wedding day. Whether you&apos;re looking for a stunning bridal lehenga, an elegant saree, a regal groom sherwani, or a sharp suit, our extensive collection promises to offer something that suits your unique style and traditions.
 
               Our expert team is here to assist you every step of the way, ensuring that your shopping experience is as seamless and personalized as possible. Let us help you make your wedding day truly unforgettable with the perfect attire.
 

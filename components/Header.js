@@ -5,7 +5,8 @@ import Mobile from "./Mobile";
 import { useContext, useEffect, useState } from "react";
 import SideCart from "./SideCart";
 import { Context } from "@/Context/Context";
-import axios from "axios";
+import Image from 'next/image';
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -150,12 +151,7 @@ const Header = () => {
 
             <div className="flex items-center gap-0">
               <a onClick={sendWhatsAppMessage}>
-                <img
-                  src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg"
-                  alt="WhatsApp Icon"
-                  style={{ margin: "10px", }}
-                />
-                {/* <i className="ti-whatsapp"></i> */}
+              <Image src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="image" width={200} height={300} />           
               </a>
 
 

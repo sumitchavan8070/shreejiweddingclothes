@@ -346,7 +346,7 @@ const Products = () => {
 
               {/* Product grid */}
               <div className="lg:col-span-3">
-                <HomeProducts />
+                {/* <HomeProducts /> */}
               </div>
             </div>
           </section>

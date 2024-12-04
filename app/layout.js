@@ -23,14 +23,14 @@ export default function RootLayout({ children }) {
         <NextTopLoader color="#000" height={4} />
         <ContextProvider>
           <AdminProvider>
-            <ProductContextProvider>
+            {/* <ProductContextProvider> */}
               <CartProvider>
                 <Header />
                 <Toaster />
                 {children}
                 <Footer />
               </CartProvider>
-            </ProductContextProvider>
+            {/* </ProductContextProvider> */}
           </AdminProvider>
         </ContextProvider>
       </body>

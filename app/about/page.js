@@ -624,7 +624,7 @@ const page = () => {
                   Make your customers happy by giving services.
                 </h2>
                 <p className="mb-5 text-base text-body-color ">
-                  Welcome to Shreeji Weddings Clothes, where fashion, comfort, and quality come together to create the perfect wardrobe for every occasion. Whether you're preparing for a grand wedding, attending a special celebration, or looking for versatile daily wear, our collection has something to offer for every style and need.
+                  Welcome to Shreeji Weddings Clothes, where fashion, comfort, and quality come together to create the perfect wardrobe for every occasion. Whether you&apos;re preparing for a grand wedding, attending a special celebration, or looking for versatile daily wear, our collection has something to offer for every style and need.
                 </p>
                 <p className="mb-8 text-base text-body-color">
 
