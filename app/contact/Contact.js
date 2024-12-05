@@ -61,10 +61,18 @@ const Contact = () => {
     const { firstName, lastName, email, message } = formData;
 
     // Construct the Gmail compose URL
-    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=shreejiwc@gmail.com&su=Message from ${firstName} ${lastName}&body=Client Email: ${email}%0A%0AMessage : ${message}`;
+    // const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=shreejiwc@gmail.com&su=Message from ${firstName} ${lastName}&body=Client Email: ${email}%0A%0AMessage : ${message}`;
 
     // Open Gmail compose page
-    window.open(gmailLink, '_blank');
+    const phoneNumber = "+918003096082"; // Replace with your WhatsApp number
+    // const message = encodeURIComponent("Hello! I would like to get in touch. for clothes");
+    // const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      `Hi, my name is : ${firstName} ${lastName}. My email is : ${email}. ${message}`
+    )}`;
+    // window.open(url, "_blank"); 
+
+    window.open(url, '_blank');
 
     // Clear the form after sending the email
     setFormData({

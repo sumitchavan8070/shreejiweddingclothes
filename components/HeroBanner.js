@@ -10,7 +10,8 @@ const HeroBanner = () => {
             <div className="sm:max-w-lg">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 {/* Summer styles are finally here */}
-                New appearial clothes are finally here.
+                {/* New appearial clothes are finally here. */}
+              Shreeji Wedding Clothes
               </h1>
               <p className="mt-4 text-xl text-gray-500">
                 This year, our new groom collection will shelter you from the
@@ -110,7 +111,7 @@ const HeroBanner = () => {
                 </div>
                 <button
                   onClick={() => {
-                    const phoneNumber = "8003096082"; // Replace with your WhatsApp number
+                    const phoneNumber = "+918003096082"; // Replace with your WhatsApp number
                     const message = encodeURIComponent("Hello! I would like to get in touch.");
                     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
                   }}

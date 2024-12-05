@@ -31,7 +31,7 @@ const Header = () => {
 
 
   const sendWhatsAppMessage = () => {
-    const phoneNumber = "8003096082"; // Replace with your WhatsApp number
+    const phoneNumber = "+918003096082"; // Replace with your WhatsApp number
     const message = encodeURIComponent("Hello! I would like to get in touch. for clothes");
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank"); // Opens in a new tab

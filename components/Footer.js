@@ -81,7 +81,7 @@ const Footer = () => {
               </p>
 
               <ul className="mt-8 flex gap-6">
-                <li>
+                {/* <li>
                   <a
                     href="https://www.facebook.com/people/Ritesh-Kumar/pfbid02RqD5hmgCY4Ha6NmTBvq2Lj8RzN4J4yyMZQgYJ14rwMe8MAUHBwu9HUz8ZR7BVURKl/?mibextid=ZbWKwL"
                     rel="noreferrer"
@@ -103,11 +103,11 @@ const Footer = () => {
                       />
                     </svg>
                   </a>
-                </li>
+                </li> */}
 
                 <li>
                   <a
-                    href="https://www.instagram.com/riteshk_007/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                    href="https://www.instagram.com/shreeji_wedding_clothes/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
                     rel="noreferrer"
                     target="_blank"
                     className="text-gray-700 transition hover:opacity-75"
